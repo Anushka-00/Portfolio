@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:wght@500&display=swap');
+:root{
+    --purple: #52154E;
+    --white: #f1ebf1;
+    --navbar_blue: #0C1B33;
+    --light_purple : #883883;
+    --yellow: #f4d58d; 
+}
+
+.bree{
+    font-family: 'Bree Serif', serif;
+}
+
+.raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    overflow-x: hidden;
+}
+body{
+    min-height: 100vh;
+    background: var(--yellow);    
+    border: 20px solid var(--navbar_blue);
+    border-top: 10px !important;
+    border-bottom: 0px !important;
+    border-radius: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    background-color: var(--navbar_blue);
+}
+
+.navbar-brand{
+    width: 250px;
+    height: 90px;
+    padding: auto;
+    font-size: 35px;
+}
+
+.navbar-brand:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in 0.5s;
+}
+.nav-item{
+    color: white;
+}
+.nav-item:hover{
+    cursor: pointer;
+    font-size: 30px;
+    transition: ease-in 0.5s;
+}
+#home{
+    background: /*linear-gradient(#CCF5AC, #169873)*/ var(--purple);
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+#home .content .girl-img img{
+    width: 56%;
+    transition: transform 1s ease-in-out;
+}
+#home .content .girl-img img:hover{
+    transform: rotateY(360deg);
+}
+#home .content .top-border{
+    width: 15%;
+    border-top: solid 5px var(--yellow);
+}
+#home .content .cv-btn{
+    background-color: var(--yellow);
+    color: var(--light_purple);
+}
+
+#home .content .cv-btn:hover{
+    cursor: pointer;
+    background-color: var(--light_purple);
+    color: var(--yellow);
+}
+
+#home .social i{
+    font-size: 40px;
+    color: var(--yellow);
+}
+#home .social i:hover{
+    color: var(--light_purple);
+    cursor: pointer;
+}
+
+#about .row h1{
+    color: var(--purple);
+}
+
+#about .heading{
+    border-bottom: 4px solid var(--purple)
+}
+
+
+.about-me{
+    text-align: justify;
+}
+#skills{
+    background: /*linear-gradient(#CCF5AC, #169873)*/ var(--purple);
+    background-size: cover;
+    width: 100%;
+}
+
+.skill-icon:hover{
+    transform: scale(1.2);
+}
+#projects .heading{
+    color: var(--purple);
+    border-bottom: 4px solid var(--purple);
+}
+
+#projects .project:hover{
+    transform: scale(1.1);
+}
+
+#projects .card{
+    overflow: hidden;
+}
+
+#projects i{
+    font-size: 25px;
+}
+#projects .project-container .card-header{
+    background-color: var(--purple);
+}
+#projects .project-container .card-body{
+    background-color: #f8d9fc;
+}
+#projects .project-container i{
+    font-size: 15px;
+}
+#contact{
+    background-color: var(--navbar_blue);
+}
+#contact .logo{
+    transition: transform 1.5s ease-in-out;
+}
+#contact .logo:hover{
+    transform: rotate(360deg);
+}
+
+#contact .brand{
+    padding: auto;
+    font-size: 35px;
+    transition: transform 1s ease-in-out;
+}
+#contact .brand:hover{
+    transform: scale(1.2);
+}
+#contact i{
+    color: var(--yellow);
+    font-size: 35px;
+}
+#contact i:hover{
+    color: var(--light_purple);
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    color: var(--yellow);
+    background: var(--navbar_blue);
+}
+
+footer .row i{
+    font-size: 25px;
+    color: var(--yellow);
+
+}
+
